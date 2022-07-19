@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [excluderegration]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <groups>
+      <run>
+        <exclude name="regration"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="sample.CreateProductTNG">
+        <methods>
+          <include name="configBC"/>
+          <include name="configBM"/>
+          <include name="configAS"/>
+          <include name="configAC"/>
+          <include name="createproductanddelete"/>
+          <include name="configAM"/>
+        </methods>
+      </class> <!-- sample.CreateProductTNG -->
+      <class name="sample.CreateOrginationTNG">
+        <methods>
+          <include name="configBC"/>
+          <include name="configBM"/>
+          <include name="configAS"/>
+          <include name="configAC"/>
+          <include name="createOrgination"/>
+          <include name="configAM"/>
+        </methods>
+      </class> <!-- sample.CreateOrginationTNG -->
+      <class name="sample.CreateContactintesng">
+        <methods>
+          <include name="configBC"/>
+          <include name="configBM"/>
+          <include name="logout"/>
+          <include name="configAS"/>
+          <include name="configAC"/>
+          <include name="createContTest"/>
+          <include name="configAM"/>
+        </methods>
+      </class> <!-- sample.CreateContactintesng -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [excluderegration] -->

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [regration]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <groups>
+      <run>
+        <include name="regration"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="sample.CreateProductTNG">
+        <methods>
+          <include name="product"/>
+        </methods>
+      </class> <!-- sample.CreateProductTNG -->
+      <class name="sample.CreateOrginationTNG">
+        <methods>
+          <include name="createOrginationAndDelete"/>
+        </methods>
+      </class> <!-- sample.CreateOrginationTNG -->
+      <class name="sample.CreateContactintesng">
+        <methods>
+          <include name="createcontAnddeleteTest"/>
+        </methods>
+      </class> <!-- sample.CreateContactintesng -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [regration] -->

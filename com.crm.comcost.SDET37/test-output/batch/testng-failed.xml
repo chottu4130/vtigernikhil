@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [batch]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="sample.CreateContactintesng">
+        <methods>
+          <include name="configBS"/>
+          <include name="configBC"/>
+          <include name="configBM"/>
+          <include name="logout"/>
+          <include name="createcontAnddeleteTest"/>
+          <include name="configAS"/>
+          <include name="configAC"/>
+          <include name="createContTest"/>
+          <include name="configAM"/>
+        </methods>
+      </class> <!-- sample.CreateContactintesng -->
+      <class name="sample.CreateOrginationTNG">
+        <methods>
+          <include name="configBS"/>
+          <include name="configBC"/>
+          <include name="configBM"/>
+          <include name="configAS"/>
+          <include name="configAC"/>
+          <include name="createOrginationAndDelete"/>
+          <include name="createOrgination"/>
+          <include name="configAM"/>
+        </methods>
+      </class> <!-- sample.CreateOrginationTNG -->
+      <class name="sample.CreateProductTNG">
+        <methods>
+          <include name="configBS"/>
+          <include name="configBC"/>
+          <include name="configBM"/>
+          <include name="configAS"/>
+          <include name="configAC"/>
+          <include name="product"/>
+          <include name="configAM"/>
+        </methods>
+      </class> <!-- sample.CreateProductTNG -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [batch] -->

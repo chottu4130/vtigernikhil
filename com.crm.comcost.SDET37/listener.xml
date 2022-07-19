@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="listener">
+<listeners>
+<listener class-name="com.crm.comcost.genericeutlity.ListenerImplemination"></listener>
+</listeners>
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="sample.CreateProductTNG"/>
+      <class name="sample.PurchaseOrderTNG"/>
+      <class name="sample.CreateVenderTNG"/>
+      <class name="sample.CreateContactintesng"/>
+      <class name="sample.CreateOrginationTest"></class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- listener -->

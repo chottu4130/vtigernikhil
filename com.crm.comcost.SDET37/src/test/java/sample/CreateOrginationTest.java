@@ -28,6 +28,7 @@ public class CreateOrginationTest extends BaseClass
 		CreateNewOrginationPage c=new CreateNewOrginationPage(driver);
 		c.sendOrginationName(lastname);
 		c.clickonsave();
+		System.out.println("hiiii");
 		OrginationInformation o=new OrginationInformation(driver);
 		o.inform(lastname);
 }

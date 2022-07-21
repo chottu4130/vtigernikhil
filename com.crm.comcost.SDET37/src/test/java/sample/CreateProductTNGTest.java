@@ -10,7 +10,7 @@ import com.crm.comcost.pomrepository.CreateProductPage;
 import com.crm.comcost.pomrepository.HomePage;
 import com.crm.comcost.pomrepository.ProductInformationPage;
 @Listeners(com.crm.comcost.genericeutlity.ListenerImplemination.class)
-public class CreateProductTNG extends BaseClass
+public class CreateProductTNGTest extends BaseClass
 {
 	@Test(groups = "regration")
 	public void product() throws Throwable

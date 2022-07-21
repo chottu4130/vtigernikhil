@@ -15,7 +15,7 @@ import com.crm.comcost.pomrepository.CreateVenderPage;
 import com.crm.comcost.pomrepository.HomePage;
 import com.crm.comcost.pomrepository.PurchaseOrderInformantionPage;
 @Listeners(com.crm.comcost.genericeutlity.ListenerImplemination.class)
-public class PurchaseOrderTNG extends BaseClass
+public class PurchaseOrderTNGTest extends BaseClass
 {
 	@Test
 	public void purchase() throws Throwable

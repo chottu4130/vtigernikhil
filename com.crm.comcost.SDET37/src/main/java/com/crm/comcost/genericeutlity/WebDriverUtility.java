@@ -2,6 +2,7 @@ package com.crm.comcost.genericeutlity;
 
 
 import java.io.File;
+import java.time.Duration;
 import java.util.Iterator;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
@@ -34,8 +35,8 @@ public class WebDriverUtility
 	 */
 	public void waitForElementInDOM(WebDriver driver) 
 	{
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-	} 
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+		} 
 	
 	/**
 	 *   it's an Explicitly wait Always wait for Page to be loaded & available in GUI
@@ -44,7 +45,7 @@ public class WebDriverUtility
 	 */
 	public void waitForPage(WebDriver driver , String partailPageURL) 
 	{
-		WebDriverWait wait = new WebDriverWait(driver, 20);
+		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(20));
 		wait.until(ExpectedConditions.urlContains(partailPageURL));
 	}
 	
@@ -55,7 +56,7 @@ public class WebDriverUtility
 	 */
 	public void waitForElement(WebDriver driver ,WebElement element) 
 	{
-		WebDriverWait wait = new WebDriverWait(driver, 20);
+		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(10));
 		wait.until(ExpectedConditions.visibilityOf(element));
 	}
 	

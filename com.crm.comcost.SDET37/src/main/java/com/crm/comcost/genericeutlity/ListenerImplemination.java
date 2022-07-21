@@ -35,8 +35,10 @@ public class ListenerImplemination extends BaseClass implements ITestListener
 		*/
 	
 			String withtitle=result.getMethod().getMethodName();
-		    EventFiringWebDriver eve=new EventFiringWebDriver(driver);
-		    File src=eve.getScreenshotAs(OutputType.FILE);
+		   // EventFiringWebDriver eve=new EventFiringWebDriver(driver);
+		    //File src=eve.getScreenshotAs(OutputType.FILE);
+			TakesScreenshot ts=(TakesScreenshot)driver;
+		    File src=ts.getScreenshotAs(OutputType.FILE);
 			
 		    File dst=new File("./errorScreenshort/"+withtitle+"_"
 				+JavaUtility.getCurrentDate("dd_MM_yyyy_HH_mm_ssss")+".png");

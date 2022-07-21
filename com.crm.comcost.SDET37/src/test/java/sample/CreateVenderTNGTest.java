@@ -9,7 +9,7 @@ import com.crm.comcost.pomrepository.CreateVenderPage;
 import com.crm.comcost.pomrepository.HomePage;
 import com.crm.comcost.pomrepository.VenderInformationPage;
 @Listeners(com.crm.comcost.genericeutlity.ListenerImplemination.class)
-public class CreateVenderTNG extends BaseClass 
+public class CreateVenderTNGTest extends BaseClass 
 {
 	@Test
 	public void vender() throws Throwable

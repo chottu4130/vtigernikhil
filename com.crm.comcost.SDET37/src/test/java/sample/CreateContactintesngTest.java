@@ -9,7 +9,7 @@ import com.crm.comcost.pomrepository.CreateContactsPage;
 import com.crm.comcost.pomrepository.CreateNewContactsPage;
 import com.crm.comcost.pomrepository.HomePage;
 @Listeners(com.crm.comcost.genericeutlity.ListenerImplemination.class)
-public class CreateContactintesng extends BaseClass
+public class CreateContactintesngTest extends BaseClass
 {
 	@Test(groups = "smoke")
 	public void createContTest() throws Throwable

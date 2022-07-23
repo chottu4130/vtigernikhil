@@ -17,7 +17,9 @@ import com.crm.comcost.pomrepository.LoginPage;
 
 public class BaseClass 
 {
-	public static WebDriver driver;
+	public WebDriver driver;
+	public static WebDriver ldriver;
+	
 	
 	/*Object Creation for Lib*/
 	public JavaUtility jlib = new JavaUtility();
@@ -50,6 +52,7 @@ public class BaseClass
 	else
 		driver=new ChromeDriver();	
 	wlib.waitForElementInDOM(driver);
+	ldriver=driver;
 	driver.manage().window().maximize();
 	}
 	

@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="smokeexclude">
-<groups>
-<run>
+<suite name="smokeexclude ">
+		<groups>
+	<run>
 <exclude name="smoke"></exclude>
 
 </run></groups>
   <test thread-count="5" name="Test">
     <classes>
-      <class name="sample.CreateProductTNG"/>
-      <class name="sample.CreateContactintesng"/>
+      <class name="sample.CreateProductTNGTest"></class>
+      <class name="sample.CreateContactintesngTest"></class>
       <class name="sample.CreateOrginationTest"></class>
     </classes>
   </test> <!-- Test -->

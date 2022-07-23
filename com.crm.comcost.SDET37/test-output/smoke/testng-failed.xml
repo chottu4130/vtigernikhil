@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [smoke]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.crm.comcost.genericeutlity.ListenerImplemination"/>
+  </listeners>
   <test thread-count="5" name="Test(failed)">
     <groups>
       <run>
@@ -8,21 +11,16 @@
       </run>
     </groups>
     <classes>
-      <class name="sample.CreateProductTNG">
+      <class name="sample.CreateOrginationTest">
         <methods>
-          <include name="createproductanddelete"/>
-        </methods>
-      </class> <!-- sample.CreateProductTNG -->
-      <class name="sample.CreateOrginationTNG">
-        <methods>
-          <include name="createOrgination"/>
-        </methods>
-      </class> <!-- sample.CreateOrginationTNG -->
-      <class name="sample.CreateContactintesng">
-        <methods>
+          <include name="configBS"/>
+          <include name="configBC"/>
+          <include name="configBM"/>
+          <include name="configAC"/>
           <include name="createContTest"/>
+          <include name="configAM"/>
         </methods>
-      </class> <!-- sample.CreateContactintesng -->
+      </class> <!-- sample.CreateOrginationTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [smoke] -->

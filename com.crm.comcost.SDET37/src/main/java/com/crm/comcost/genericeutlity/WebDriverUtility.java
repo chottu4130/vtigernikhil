@@ -1,12 +1,12 @@
 package com.crm.comcost.genericeutlity;
 
-
 import java.io.File;
+import java.io.IOException;
 import java.time.Duration;
 import java.util.Iterator;
 import java.util.Set;
-import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
@@ -18,6 +18,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.ITestResult;
 
 /**
  *  its contains WebDriver specific reusable actions 
@@ -27,7 +28,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class WebDriverUtility 
 {
-	private static final String FileUtils = null;
+	
 	WebDriver driver;
 	/**
 	 *   it's an implicitly wait  Always wait for Element in DOM document & release the control if element available 
@@ -226,7 +227,28 @@ public class WebDriverUtility
 		{
 		   Actions act = new Actions(driver);
 		act.sendKeys(Keys.ENTER).perform();
-	   } 
+	   }
+	
+	
+	public void takescreenshort(WebDriver driver,ITestResult result) 
+	{
+		
+	     	String withtitle=result.getMethod().getMethodName();
+		   // EventFiringWebDriver eve=new EventFiringWebDriver(driver);
+		    //File src=eve.getScreenshotAs(OutputType.FILE);
+			TakesScreenshot ts=(TakesScreenshot)driver;
+		    File src=ts.getScreenshotAs(OutputType.FILE);
+			
+		    File dst=new File("./errorScreenshort/"+withtitle+"_"
+				+JavaUtility.getCurrentDate("dd_MM_yyyy_HH_mm_ssss")+".png");
+		   try {
+			FileUtils.copyFile(src, dst);
+		} catch (IOException e) {
+			
+			e.printStackTrace();
+		}
+		
+	}
 
 		
 
